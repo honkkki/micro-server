@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "../user";
+
+service UserService {
+    rpc Test(UserRequest) returns (UserResponse) {}
+}
+
+message UserRequest {
+    int64 id = 1;
+}
+
+message UserResponse {
+    string ret = 1;
+}

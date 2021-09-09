@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package course;
+
+option go_package = "../course";
+
+service CourseService {
+  rpc GetTop(CourseRequest) returns (CourseResponse) {}
+}
+
+message Course {
+  int64 course_id = 1;
+  string course_name = 2;
+}
+
+message CourseRequest {
+  int32 size = 1;
+}
+
+message CourseResponse {
+  repeated Course result = 1;
+}
