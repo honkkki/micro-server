@@ -13,7 +13,7 @@ func main() {
 	)
 
 	service.Init()
-	err := course.RegisterCourseServiceHandler(service.Server(), &logic.CourseService{})
+	err := course.RegisterCourseServiceHandler(service.Server(), logic.NewCourseService(service.Client()))
 	if err != nil {
 		log.Fatal(err)
 	}

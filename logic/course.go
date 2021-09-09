@@ -3,9 +3,15 @@ package logic
 import (
 	"context"
 	"github.com/honkkki/micro-server/pb/course"
+	"github.com/micro/go-micro/v2/client"
 )
 
 type CourseService struct {
+	client client.Client
+}
+
+func NewCourseService(c client.Client) *CourseService {
+	return &CourseService{client: c}
 }
 
 func (c *CourseService) GetTop(ctx context.Context, req *course.CourseRequest, resp *course.CourseResponse) error {

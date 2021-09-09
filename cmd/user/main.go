@@ -13,7 +13,7 @@ func main() {
 	)
 
 	service.Init()
-	err := user.RegisterUserServiceHandler(service.Server(), &logic.UserService{})
+	err := user.RegisterUserServiceHandler(service.Server(), logic.NewUserService(service.Client()))
 	if err != nil {
 		log.Fatal(err)
 	}
