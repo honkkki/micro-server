@@ -5,6 +5,8 @@ go 1.14
 require (
 	github.com/Microsoft/go-winio v0.5.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/gin-contrib/cors v1.3.1
+	github.com/gin-gonic/gin v1.7.4
 	github.com/go-git/go-git/v5 v5.4.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.2

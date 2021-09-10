@@ -1,4 +1,4 @@
-package logic
+package rpcservice
 
 import (
 	"context"
@@ -23,6 +23,7 @@ func (u *UserService) Test(ctx context.Context, req *user.UserRequest, resp *use
 	res, err := s.GetTop(ctx, &course.CourseRequest{Size: 10})
 	if err != nil {
 		log.Println("call course service:GetTop failed", err)
+		return err
 	}
 	log.Println(res.Result)
 	return nil

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/honkkki/micro-server/logic"
 	"github.com/honkkki/micro-server/pb/course"
+	"github.com/honkkki/micro-server/rpcservice"
 	"github.com/micro/go-micro/v2"
 	"log"
 )
@@ -13,7 +13,7 @@ func main() {
 	)
 
 	service.Init()
-	err := course.RegisterCourseServiceHandler(service.Server(), logic.NewCourseService(service.Client()))
+	err := course.RegisterCourseServiceHandler(service.Server(), rpcservice.NewCourseService(service.Client()))
 	if err != nil {
 		log.Fatal(err)
 	}

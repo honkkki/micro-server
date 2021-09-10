@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/honkkki/micro-server/logic"
 	"github.com/honkkki/micro-server/pb/user"
+	"github.com/honkkki/micro-server/rpcservice"
 	"github.com/micro/go-micro/v2"
 	"log"
 )
@@ -13,7 +13,7 @@ func main() {
 	)
 
 	service.Init()
-	err := user.RegisterUserServiceHandler(service.Server(), logic.NewUserService(service.Client()))
+	err := user.RegisterUserServiceHandler(service.Server(), rpcservice.NewUserService(service.Client()))
 	if err != nil {
 		log.Fatal(err)
 	}
