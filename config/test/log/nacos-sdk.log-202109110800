@@ -1,0 +1,50 @@
+2021-09-12T01:08:19.097+0800	[31mERROR[0m	[cache.ReadConfigFromFile] error: failed to read config cache file:/mnt/d/go/src/github.com/honkkki/micro-server/config/test/cache/config/micro-sysconfig@@micro@@,err:open /mnt/d/go/src/github.com/honkkki/micro-server/config/test/cache/config/micro-sysconfig@@micro@@: no such file or directory 
+2021-09-12T01:09:28.102+0800	[31mERROR[0m	[cache.ReadConfigFromFile] error: failed to read config cache file:/mnt/d/go/src/github.com/honkkki/micro-server/config/test/cache/config/micro-sysconfig@@micro@@,err:open /mnt/d/go/src/github.com/honkkki/micro-server/config/test/cache/config/micro-sysconfig@@micro@@: no such file or directory 
+2021-09-12T01:09:28.115+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicro] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:09:28.118+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:09:28.141+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroe1da1617b1dd6622cfd7b749dec87d1e] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:09:50.487+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:09:50.501+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:09:58.527+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:09:58.541+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicro395ddb94bdc7228a96e7752c820f8bfe] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:10:37.816+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicro395ddb94bdc7228a96e7752c820f8bfe] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:10:37.823+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:10:37.838+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:14:28.647+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:14:28.651+0800	[34mINFO[0m	[client.ListenConfig] no change
+2021-09-12T01:14:28.662+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:17:00.162+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:17:00.166+0800	[34mINFO[0m	[client.ListenConfig] no change
+2021-09-12T01:17:00.176+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:17:26.605+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:17:26.609+0800	[34mINFO[0m	[client.ListenConfig] no change
+2021-09-12T01:17:26.620+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroed89a07b71fd96366fa558ae8cdcbc4f] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:17:30.233+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:17:30.246+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicro395ddb94bdc7228a96e7752c820f8bfe] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:17:56.472+0800	[34mINFO[0m	[client.ListenConfig] config changed:micro-sysconfig%02micro%01
+
+2021-09-12T01:17:56.486+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroafbb2d3902b7d6d4afbea3248d8c5de3] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2021-09-12T01:18:47.032+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroafbb2d3902b7d6d4afbea3248d8c5de3] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2021-09-12T01:18:47.036+0800	[34mINFO[0m	[client.ListenConfig] no change
+2021-09-12T01:18:47.047+0800	[34mINFO[0m	[client.ListenConfig] request params:map[Listening-Configs:micro-sysconfigmicroafbb2d3902b7d6d4afbea3248d8c5de3] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+

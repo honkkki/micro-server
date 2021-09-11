@@ -1,0 +1,5 @@
+micro:
+  config:
+    address: 127.0.0.1
+    path: /nacos
+    port: 8848
