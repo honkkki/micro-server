@@ -10,7 +10,7 @@ import (
 func GetTopList(ctx *gin.Context) {
 	c := grpc.NewClient()
 	// 调用grpc服务
-	s := course.NewCourseService("api.karina.com.api.course", c)
+	s := course.NewCourseService("karina.com.api.course", c)
 	res, err := s.GetTop(context.Background(), &course.CourseRequest{Size: 10})
 	if err != nil {
 		ctx.JSON(500, gin.H{

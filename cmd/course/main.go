@@ -9,7 +9,7 @@ import (
 
 func main() {
 	service := micro.NewService(
-		micro.Name("api.karina.com.api.course"),
+		micro.Name("karina.com.api.course"),
 	)
 
 	service.Init()
