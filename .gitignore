@@ -15,4 +15,8 @@
 # vendor/
 .idea
 cache
+log
+config/log
+config/cache
+
 
