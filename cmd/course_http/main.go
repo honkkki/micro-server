@@ -20,9 +20,9 @@ func main() {
 	}
 
 	logger.Info(model.Db)
-	var count int
-	model.Db.Table("user").Select("id").Count(&count)
-	logger.Info("users count: ", count)
+	var user model.User
+	model.Db.Table("user").Select("*").First(&user)
+	logger.Info(user.Nickname)
 
 	// 引入gin使用http服务
 	e := httpserver.InitServer()
@@ -32,6 +32,7 @@ func main() {
 
 	service := web.NewService(
 		web.Name("karina.com.http.course"),
+		web.Version("1.0.0"),
 		web.Handler(e),
 	)
 

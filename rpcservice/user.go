@@ -19,7 +19,7 @@ func NewUserService(c client.Client) *UserService {
 
 func (u *UserService) Test(ctx context.Context, req *user.UserRequest, resp *user.UserResponse) error {
 	resp.Ret = strconv.Itoa(int(req.Id)) + "---karina"
-	s := course.NewCourseService("api.karina.com.api.course", u.client)
+	s := course.NewCourseService("karina.com.api.course", u.client)
 	res, err := s.GetTop(ctx, &course.CourseRequest{Size: 10})
 	if err != nil {
 		log.Println("call course service:GetTop failed", err)
