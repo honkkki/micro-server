@@ -19,19 +19,18 @@ func main() {
 		return
 	}
 
-	logger.Info(model.Db)
 	var user model.User
 	model.Db.Table("user").Select("*").First(&user)
-	logger.Info(user.Nickname)
+	log.Println(user.Nickname)
 
 	// 引入gin使用http服务
 	e := httpserver.InitServer()
-	e.GET("/course", func(ctx *gin.Context) {
+	e.GET("/courselist", func(ctx *gin.Context) {
 		course.GetTopList(ctx)
 	})
 
 	service := web.NewService(
-		web.Name("karina.com.http.course"),
+		web.Name("karina.com.api.coursehttp"),
 		web.Version("1.0.0"),
 		web.Handler(e),
 	)
