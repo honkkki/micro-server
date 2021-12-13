@@ -2,11 +2,10 @@ package rpcservice
 
 import (
 	"context"
-	"github.com/honkkki/micro-server/pb/course"
+	"strconv"
+
 	"github.com/honkkki/micro-server/pb/user"
 	"github.com/micro/go-micro/v2/client"
-	"log"
-	"strconv"
 )
 
 type UserService struct {
@@ -19,12 +18,12 @@ func NewUserService(c client.Client) *UserService {
 
 func (u *UserService) Test(ctx context.Context, req *user.UserRequest, resp *user.UserResponse) error {
 	resp.Ret = strconv.Itoa(int(req.Id)) + "---karina"
-	s := course.NewCourseService("karina.com.api.course", u.client)
-	res, err := s.GetTop(ctx, &course.CourseRequest{Size: 10})
-	if err != nil {
-		log.Println("call course service:GetTop failed", err)
-		return err
-	}
-	log.Println(res.Result)
+	//s := course.NewCourseService("karina.com.service.course", u.client)
+	//res, err := s.GetTop(ctx, &course.CourseRequest{Size: 10})
+	//if err != nil {
+	//	log.Println("call course service:GetTop failed", err)
+	//	return err
+	//}
+	//log.Println(res.Result)
 	return nil
 }

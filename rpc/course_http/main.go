@@ -1,13 +1,14 @@
 package main
 
 import (
+	"log"
+
 	"github.com/gin-gonic/gin"
+	"github.com/honkkki/micro-server/apiservice/course"
 	"github.com/honkkki/micro-server/httpserver"
-	"github.com/honkkki/micro-server/logic/course"
 	"github.com/honkkki/micro-server/model"
 	"github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/web"
-	"log"
 )
 
 func main() {

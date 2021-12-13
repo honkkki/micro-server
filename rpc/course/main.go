@@ -1,10 +1,11 @@
 package main
 
 import (
+	"log"
+
 	"github.com/honkkki/micro-server/pb/course"
 	"github.com/honkkki/micro-server/rpcservice"
 	"github.com/micro/go-micro/v2"
-	"log"
 )
 
 func main() {
