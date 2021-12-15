@@ -2,6 +2,10 @@ package config
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+
 	"github.com/honkkki/micro-server/tools"
 	"github.com/micro/go-micro/v2/config"
 	"github.com/micro/go-micro/v2/util/file"
@@ -9,9 +13,6 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
-	"io/ioutil"
-	"log"
-	"os"
 )
 
 type AppConfig struct {
@@ -89,7 +90,7 @@ func watchConfig(dataId, group string, nacosConfig interface{}) {
 	cacheFile := cacheDir + cacheFileName
 	exist, _ := file.Exists(cacheDir)
 	if !exist {
-		os.Mkdir(cacheDir, 0666)
+		os.Mkdir(cacheDir, 0777)
 	}
 
 	// get config
